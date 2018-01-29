@@ -1,6 +1,3 @@
-def question():
-    answer=input("What is your question?")
-
 import random
 def question():
 	answer=input("What is your question?")
