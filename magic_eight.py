@@ -1,5 +1,16 @@
+import re
 def question():
     answer=input("What is your question?")
+    if answer[-1] != "?":
+        print("I’m sorry, I can only answer questions.")
+    while answer !="quit":
+        answer = input("What is your question?")
+        if answer=="quit":
+            return
+        elif answer[-1] != "?":
+            print("I’m sorry, I can only answer questions.")
+
+        
 
 # import random
 # def question():
@@ -9,4 +20,4 @@ def question():
 # 	ans_list=ans_list+strrr.split('●')
 # 	answer=random.choice(ans_list)
 #
-# question()
+question()
